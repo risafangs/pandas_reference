@@ -19,6 +19,10 @@ pd.options.display.float_format = '{:,.0f}'.format
 ```
 %whos DataFrame
 ```
+**create year-month column from another date or timestamp**
+```
+df['new_column'] = df['timestamp'].dt.strftime('%Y-%m')
+```
 
 ## Matplotlib
 
